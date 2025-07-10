@@ -21,7 +21,7 @@ Set-ExecutionPolicy Bypass -Force
 
 
 # SharedFolder (JP Exclusive) download path:
-$downloadPath = "\\yourdomain.com\ls\Regional\AMA\TYO\temp\JP-Office Printer Installer\Ricoh Installer"
+$downloadPath = "\\yourdomain.com\TYO\temp\JP-Office Printer Installer\Ricoh Installer"
 
 # Download Destination
 $DownloadFolder = "c:\temp\Ricoh_Printer"
@@ -51,7 +51,7 @@ New-Item -ItemType Directory -Name "Ricoh_Printer" -Path "C:\Temp\" -Verbose
 # =======================
 # DOWNLOAD FROM Shared Folder
 # =======================
-Write-Host "`nDownloading Driver from LS-Japan Shared Folder" -Font "Green"
+Write-Host "`nDownloading Driver from Shared Folder" -Font "Green"
 
 
 #This Check the download directory
