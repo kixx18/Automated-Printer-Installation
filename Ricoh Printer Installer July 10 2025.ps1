@@ -21,7 +21,7 @@ Set-ExecutionPolicy Bypass -Force
 
 
 # SharedFolder (JP Exclusive) download path:
-$downloadPath = "\\levi.com\ls\Regional\AMA\TYO\temp\JP-Office Printer Installer\Ricoh Installer"
+$downloadPath = "\\yourdomain.com\ls\Regional\AMA\TYO\temp\JP-Office Printer Installer\Ricoh Installer"
 
 # Download Destination
 $DownloadFolder = "c:\temp\Ricoh_Printer"
