@@ -43,7 +43,7 @@ for ($i = 1; $i -le 30; $i++) {
     Write-Progress -Activity "Installing..." -Status "$percent% Complete" -PercentComplete $percent
     Start-Sleep -Seconds 1
 }
-Write-Host "✅ Password Reset/Unlock completed!" "Your NewPassword: levi1234" -ForegroundColor Yellow
+Write-Host "✅ Password Reset/Unlock completed!" "Your NewPassword: XXXXXXXX" -ForegroundColor Yellow
 
 Read-Host "Press Enter to Exit"
 
