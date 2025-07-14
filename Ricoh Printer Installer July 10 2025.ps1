@@ -39,10 +39,10 @@ $DriverName = "RICOH MP C6004 JPN RPCS"
 
 #Printer names: Value and Keys
 $Printers = @{
-    "172.24.150.214" = "7F RICOH Printer"
-    "172.24.150.216" = "5F RICOH Printer"
-    "172.24.150.217" = "6F RICOH Printer"
-    "172.24.150.218" = "4F RICOH Printer"
+    "xxx.xxx.xxx.xxx" = "7F RICOH Printer"
+    "xxx.xxx.xxx.xxx" = "5F RICOH Printer"
+    "xxx.xxx.xxx.xxx" = "6F RICOH Printer"
+    "xxx.xxx.xxx.xxx" = "4F RICOH Printer"
     }
 
 #Create Download destination folder
@@ -74,9 +74,9 @@ pnputil /add-driver "$DriverInfPath" /install
 
 #Installing and assigning the Printer and Port
 #This Test is working. So now I have to create a ForEach loop for it to be easier
-#Add-PrinterPort -Name "172.24.150.217" -PrinterHostAddress "172.24.150.217" 
+#Add-PrinterPort -Name "xxx.xxx.xxx.xxx" -PrinterHostAddress "xxx.xxx.xxx.xxx" 
 #Add-PrinterDriver -Name "RICOH MP C6004 JPN RPCS" -Verbose
-#Add-Printer -Name "6F_RICOH_Printer" -PortName "172.24.150.217" -Verbose
+#Add-Printer -Name "6F_RICOH_Printer" -PortName "xxx.xxx.xxx.xxx" -Verbose
 
 Write-Host "n`Installing Printers for 5F - 6F - 7F"
 foreach ($ip in $Printers.Keys) {
